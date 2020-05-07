@@ -13,17 +13,21 @@ output:
 
 # **Nos essais**
 
-_ Domaine choisi pour la reconnaissance d'images
+Pour la reconnaissance d'images, nous avons choisi le domaine très vaste des animaux. Ainsi, les images téléchargées sont à classer en 2 catégories d'animaux très différents, mais que nous avons choisit :
 
-_ Catégories pour les images à classer
+* Les cigognes blanches
+* Les homards
 
-_ Remarques sur la constitution du corpus d'apprentissage
+Quelques remarques sur la constitution du corpus d'apprentissage :
 
-_ Remarques sur la création de votre réseau neuronal, son utilisation et sa performance
+Lors du téléchargement des images de homards, certaines présentaient des plats de homards cuisinés. Nous avons décidé de ne garder que les images de homard entiers, vivants (bleus) ou cuits (rouges).
 
-_ vos 3 fichiers de sauvegarde du réseau neuronal (.categories, .h5 et .json)
+## La création du réseau neuronal
+son utilisation et sa performance
 
-# **Résultats**
+nos 3 fichiers de sauvegarde du réseau neuronal (.categories, .h5 et .json)
+
+## Résultats
 
 Après 25 passes d'apprentissage, les statistiques sur le dataset de tests donnent de très bons résultats :
 
@@ -41,7 +45,7 @@ En effet, le programme a reconnu toutes les images de homard, et seule la photo 
 knitr::include_graphics("cigogne_non_reconnue.png")
 ```
 
-2) Etudes de réseaux précédemment créés (TP Deep Learning §4)
+# **Études de réseaux précédemment créés (TP Deep Learning §4)**
 
 Produire un ou des graphiques à partir du fichier models.csv (dans le dépôt Github IsaraS8OpenDeepLearning) et interpréter les résultats.
 
