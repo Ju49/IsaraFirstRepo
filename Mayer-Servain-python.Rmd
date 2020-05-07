@@ -20,7 +20,11 @@ Pour la reconnaissance d'images, nous avons choisi le domaine très vaste des an
 
 Quelques remarques sur la constitution du corpus d'apprentissage :
 
-Lors du téléchargement des images de homards, certaines présentaient des plats de homards cuisinés. Nous avons décidé de ne garder que les images de homard entiers, vivants (bleus) ou cuits (rouges).
+Le dossier raw_set contient 2 dossiers (1 par catégorie).
+
+Lors du téléchargement des images de homards, certaines présentaient des plats de homards cuisinés. Nous avons décidé de ne garder que les images de homards entiers, vivants (bleus) ou cuits (rouges). Ainsi, sur 100 images téléchargées, 65 ont été conservées.
+
+Concernant les cigognes, les 100 images ont été conservées.
 
 ## La création du réseau neuronal
 son utilisation et sa performance
