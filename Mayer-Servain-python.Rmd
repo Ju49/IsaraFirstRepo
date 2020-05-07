@@ -1,0 +1,37 @@
+---
+title: "Python et machine learning"
+author: "Juliette MAYER & Paul SERVAIN"
+date: "07/05/2020"
+output:
+  html_document :
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+# **Partie 1**
+
+Texte de la partie 1
+
+# **Résultats**
+
+Les statistiques sur le dataset de tests donnent de très bons résultats :
+
+CNN binary (2 catégories)
+
+cigogne_blanche : 19/20 (95%)
+
+homard : 13/13 (100%)
+
+Global : 32/33 (96%)
+
+En effet, le programme a reconnu toutes les images de homard, et seule la photo de cigogne n°27 a été prise pour une photo de homard par le programme : `dataset/test_set\cigogne_blanche\img_27.jpg homard`. L'image qui n'a pas été reconnue est la suivante : 
+
+```{r cigogne_non_reconnue, echo=FALSE, out.width = '80%', fig.align = "center",fig.cap="L'image img_27.jpg (sélectionnée en bleu) a été reconnue comme étant une image de homard par le programme"}
+knitr::include_graphics("cigogne_non_reconnue.png")
+```
+
+
+
