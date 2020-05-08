@@ -78,9 +78,11 @@ En effet, le programme a reconnu toutes les images de homard, et seule la photo 
 knitr::include_graphics("cigogne_non_reconnue.png")
 ```
 
-# **Études de réseaux précédemment créés (TP Deep Learning §4)**
+# **Études de réseaux précédemment créés**
 
-Produire un ou des graphiques à partir du fichier models.csv (dans le dépôt Github IsaraS8OpenDeepLearning) et interpréter les résultats.
+*Produire un ou des graphiques à partir du fichier models.csv (dans le dépôt Github IsaraS8OpenDeepLearning) et interpréter les résultats.*
+
+**TP Deep Learning §4** : Un certain nombre de réseaux de neurones ont été construits à partir de 3 corpus d’apprentissage (1 corpus sur le thème des chiens et des chats, les 2 autres sur les animaux de la Savane). Ils ont été sauvegardés dans le sous-dossier models du dépôt.Certaines caractéristiques de ces modèles ainsi que leurs performances ont été regroupées dans le fichier models.csv.*Testez ces différents modèles et interprétez les données du fichier models.csv au moyen de la technique de votre choix (par exemple avec R)*.
 
 # **Nos remarques sur cette séquence et ce qu'elle nous a apporté**
 Cette séquence nous a permis de découvrir et de mettre en pratique la notion de machine learning. Le fait de savoir comment fonctionne un corpus d'apprentissage permet, entre autres, d'utiliser les applications mobiles de reconnaissance d'images en comprennant comment ces dernières fonctionnent et non plus comme des consommateur·trice·s "naïfs·naïves".
