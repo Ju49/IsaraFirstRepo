@@ -18,7 +18,7 @@ Pour la reconnaissance d'images, nous avons choisi le domaine très vaste des an
 * Les cigognes blanches
 * Les homards
 
-Quelques remarques sur la constitution du corpus d'apprentissage :
+**Quelques remarques sur la constitution du corpus d'apprentissage :** 
 
 Le dossier raw_set contient 2 dossiers (1 par catégorie).
 
@@ -27,21 +27,50 @@ Lors du téléchargement des images de homards, certaines présentaient des plat
 Concernant les cigognes, les 100 images ont été conservées.
 
 ## La création du réseau neuronal
+Avant la création du réseau neuronal, on commence par entrer : `models/catdog_5p`dans le terminal de commande Visua Studio Code. Il s'agit de faire appel au réseau neuronal qui identifie les chiens et les chats en 5 passes. Évidemment, comme ce dernier identifie les chiens et les chats, on va obtenir des résultats de 0% après l'avoir utilisé pour identifier des cigognes et des homards. Donc on utilise juste ce modèle pour tester si ça fonctionne : 
+
+```{r catdogmodel, echo=FALSE, out.width = '80%', fig.align = "center",fig.cap="Les catégories cigogne_blanche et homard ont été identifiées, avec des résultats de 0% du fait du modèle choisi."}
+knitr::include_graphics("catdogmodel.png")
+```
+
+Maintenant, la phase d'aprentissage peut commencer. Parmis les actions possibles : 
+
+* Votre choix ? `1` (créer et entraîner un nouveau réseau neuronal)
+* Chemin d'accès du dataset (dataset) : `dataset`
+* Nombre de passes d'apprentissage (25) : `25`
+* Tenter une classification binaire ? o/n (o) : `o`
+
+On décide de lancer 25 passes d'apprentissage : 
+```{r 4sur25p, echo=FALSE, out.width = '45%', fig.align = "center",fig.cap="Lancement de la 4e passe d'apprentissage sur les 25"}
+knitr::include_graphics("4sur25p.png")
+```
+
+Puis on enregistre le réseau neuronal :
+
+* Votre choix ? : `3`(sauvegarder le réseau courant)
+* Nom de fichier pour le réseau à enregistrer (model) : `cigogne_et_homard_25p`
+
 son utilisation et sa performance
 
-nos 3 fichiers de sauvegarde du réseau neuronal (.categories, .h5 et .json)
+Nos 3 fichiers de sauvegarde du réseau neuronal sont les suivants :
+
+* cigogne_et_homard_25p.categories
+* cigogne_et_homard_25p.h5
+* cigogne_et_homard_25p.json
 
 ## Résultats
 
-Après 25 passes d'apprentissage, les statistiques sur le dataset de tests donnent de très bons résultats :
+Après 25 passes d'apprentissage, on peut observer les résultats avec l'action n°6 :
 
-CNN binary (2 catégories)
+* Votre choix ? : `6` (classer un dossier d'images)
+* Chemin d'accès pour le dossier des images (dataset/test_set) : `dataset/test_set`
 
-cigogne_blanche : 19/20 (95%)
+Les statistiques sur le dataset de tests donnent de très bons résultats :
 
-homard : 13/13 (100%)
-
-Global : 32/33 (96%)
+* CNN binary (2 catégories)
+* cigogne_blanche : 19/20 (95%)
+* homard : 13/13 (100%)
+* Global : 32/33 (96%)
 
 En effet, le programme a reconnu toutes les images de homard, et seule la photo de cigogne n°27 a été prise pour une photo de homard par le programme : `dataset/test_set\cigogne_blanche\img_27.jpg homard`. L'image qui n'a pas été reconnue est la suivante : 
 
@@ -54,4 +83,4 @@ knitr::include_graphics("cigogne_non_reconnue.png")
 Produire un ou des graphiques à partir du fichier models.csv (dans le dépôt Github IsaraS8OpenDeepLearning) et interpréter les résultats.
 
 # **Nos remarques sur cette séquence et ce qu'elle nous a apporté**
-
+Cette séquence nous a permis de découvrir et de mettre en pratique la notion de machine learning. Le fait de savoir comment fonctionne un corpus d'apprentissage permet, entre autres, d'utiliser les applications mobiles de reconnaissance d'images en comprennant comment ces dernières fonctionnent et non plus comme des consommateur·trice·s "naïfs·naïves".
