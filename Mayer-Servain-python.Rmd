@@ -72,7 +72,7 @@ Les statistiques sur le dataset de tests donnent de très bons résultats :
 * homard : 13/13 (100%)
 * Global : 32/33 (96%)
 
-En effet, le programme a reconnu toutes les images de homard, et seule la photo de cigogne n°27 a été prise pour une photo de homard par le programme : `dataset/test_set\cigogne_blanche\img_27.jpg homard`. L'image qui n'a pas été reconnue est la suivante : 
+En effet, le programme a reconnu toutes les images de homard, et seule la photo de cigogne n°27 a été prise pour une photo de homard par le programme : (je ne suis pas sûr que le 19/20 signifie que l'image de cigogne a été prise pour un homard, je crois qu'il n'a simplement pas reconnu de cigogne. Pour voir qu'elle image a été prise pour une autre, il faut faire une autre manip. A confirmer) `dataset/test_set\cigogne_blanche\img_27.jpg homard`. L'image qui n'a pas été reconnue est la suivante : 
 
 ```{r cigogne_non_reconnue, echo=FALSE, out.width = '80%', fig.align = "center",fig.cap="L'image img_27.jpg (sélectionnée en bleu) a été reconnue comme étant une image de homard par le programme"}
 knitr::include_graphics("cigogne_non_reconnue.png")
@@ -85,4 +85,6 @@ knitr::include_graphics("cigogne_non_reconnue.png")
 **TP Deep Learning §4** : Un certain nombre de réseaux de neurones ont été construits à partir de 3 corpus d’apprentissage (1 corpus sur le thème des chiens et des chats, les 2 autres sur les animaux de la Savane). Ils ont été sauvegardés dans le sous-dossier models du dépôt.Certaines caractéristiques de ces modèles ainsi que leurs performances ont été regroupées dans le fichier models.csv.*Testez ces différents modèles et interprétez les données du fichier models.csv au moyen de la technique de votre choix (par exemple avec R)*.
 
 # **Nos remarques sur cette séquence et ce qu'elle nous a apporté**
-Cette séquence nous a permis de découvrir et de mettre en pratique la notion de machine learning. Le fait de savoir comment fonctionne un corpus d'apprentissage permet, entre autres, d'utiliser les applications mobiles de reconnaissance d'images en comprennant comment ces dernières fonctionnent et non plus comme des consommateur·trice·s "naïfs·naïves".
+Cette séquence nous a permis de découvrir et de mettre en pratique la notion de machine (deep plutôt?) learning. Le fait de savoir comment fonctionne un corpus d'apprentissage permet, entre autres, d'utiliser les applications mobiles de reconnaissance d'images en comprennant comment ces dernières fonctionnent et non plus comme des consommateur·trice·s "naïfs·naïves".
+D'autant plus que cette notion est parfaitement d'actualité, avec l'arrivée de la reconnaissance faciale dans notre quotidien (voir le documentaire d'Arte "Tous surveillés : sept milliards de suspects" diffusé le 21/04/2020).
+Nous avons pu aussi mettre un pied dans le monde de la programmation et du code, que nous ne connaissions que très peu auparavant, et cela s'est avéré très interessant. (pour moi hein, Paul :) )
