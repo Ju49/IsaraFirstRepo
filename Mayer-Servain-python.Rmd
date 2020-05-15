@@ -50,8 +50,6 @@ Puis on enregistre le réseau neuronal :
 * Votre choix ? : `3`(sauvegarder le réseau courant)
 * Nom de fichier pour le réseau à enregistrer (model) : `cigogne_et_homard_25p`
 
-son utilisation et sa performance
-
 Nos 3 fichiers de sauvegarde du réseau neuronal sont les suivants :
 
 * cigogne_et_homard_25p.categories
